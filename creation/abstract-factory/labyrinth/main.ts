@@ -1,11 +1,11 @@
-import { Labyrinth } from './labyrinth'
+import { NormalLabyrinth } from './map-place/labyrinths/normal-labyrinth'
 import { LabyrinthFactory } from './factories/labyrinth-factory'
 import { NormalLabyrinthFactory } from './factories/normal-labyrinth-factory'
 
 export class LabyrinthGame {
   constructor(private labyrinth_factory: LabyrinthFactory) {}
 
-  create_labyrinth(): Labyrinth {
+  create_labyrinth(): NormalLabyrinth {
     const labyrinth = this.labyrinth_factory.make_labyrinth()
     const room1 = this.labyrinth_factory.make_room(1)
     const room2 = this.labyrinth_factory.make_room(1)
