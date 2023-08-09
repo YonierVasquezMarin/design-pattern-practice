@@ -27,4 +27,4 @@ export class LabyrinthGame {
   }
 }
 
-const labyrinth_game = new LabyrinthGame(new NormalLabyrinthFactory())
+new LabyrinthGame(new NormalLabyrinthFactory())

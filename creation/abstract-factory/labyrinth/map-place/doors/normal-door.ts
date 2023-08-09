@@ -14,5 +14,5 @@ export class NormalDoor extends MapPlace implements Door {
     this.room2 = room2
   }
 
-  enter_to(): void {}
+  // enter_to(): void {}
 }
