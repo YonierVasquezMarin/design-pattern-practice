@@ -6,11 +6,8 @@ Por cada patron de diseño existen ejercicios completos que usan todos los eleme
 
 # Como ejecutar los ejercicios
 
-Para ejecutar los ejercicios debe tener NodeJs instalado. Para correr cualquier ejercicio se debe desplazar hasta el directorio del ejercicio, después ejecuta el comando `node main.ts`. Cada ejercicio cuenta con un archivo `main.ts`.
+Para ejecutar los ejercicios debe tener NodeJs instalado y el paquete `ts-node` (se instala globalmente con el comando `npm -g ts-node`). Para correr cualquier ejercicio se debe desplazar hasta el directorio del ejercicio, después ejecuta el comando `ts-node main.ts`.
 
 # Como aplicar estilos prettier
 
-Debes tener instalado dos extensiones:
-
-1. Prettier
-2. Format on auto save (opcional si usas autosave en VS Code)
+Debes tener instalada la extensión de prettier, opcionalmente puedes configurar para que se aplique el formateo automático después de guardar el archivo en `Settings>Format>On Auto Save`, después de guardar el archivo el formato se ajusta automáticamente.
