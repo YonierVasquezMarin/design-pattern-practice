@@ -1,0 +1,14 @@
+{
+  "name": "design-pattern",
+  "version": "1.0.0",
+  "description": "Test for design pattern",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yonier Vasquez Marin",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.46.0"
+  }
+}

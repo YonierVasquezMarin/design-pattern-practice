@@ -1,0 +1,8 @@
+/node_modules/*
+.eslintignore
+.eslintrc.json
+.gitignore
+.prettierrc.json
+package-lock.json
+package.json
+*.md
