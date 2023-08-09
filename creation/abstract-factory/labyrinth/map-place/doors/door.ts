@@ -8,6 +8,7 @@ export class Door extends MapPlace {
 
   constructor(room1: Room, room2: Room) {
     super()
+    this.is_opened = false
     this.room1 = room1
     this.room2 = room2
   }

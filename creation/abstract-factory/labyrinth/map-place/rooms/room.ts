@@ -1,7 +1,7 @@
 import { MapPlace } from '../map-place'
 
 export class Room extends MapPlace {
-  sides: Array<MapPlace>
+  sides: Array<MapPlace> = []
   room_number: number
 
   constructor(room_number: number) {
