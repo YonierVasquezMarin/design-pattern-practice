@@ -1,14 +1,14 @@
 import { Labyrinth } from '../labyrinth'
-import { Wall } from '../map-place/walls/wall'
-import { Room } from '../map-place/rooms/room'
-import { Door } from '../map-place/doors/door'
+import { NormalWall } from '../map-place/walls/normal-wall'
+import { NormalRoom } from '../map-place/rooms/normal-room'
+import { NormalDoor } from '../map-place/doors/normal-door'
 
 export interface LabyrinthFactory {
   make_labyrinth(): Labyrinth
 
-  make_wall(): Wall
+  make_wall(): NormalWall
 
-  make_room(room_number: number): Room
+  make_room(room_number: number): NormalRoom
 
-  make_door(room1: Room, room2: Room): Door
+  make_door(room1: NormalRoom, room2: NormalRoom): NormalDoor
 }

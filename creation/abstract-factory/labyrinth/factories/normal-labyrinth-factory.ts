@@ -1,20 +1,20 @@
 import { Labyrinth } from '../labyrinth'
-import { Door } from '../map-place/doors/door'
-import { Room } from '../map-place/rooms/room'
-import { Wall } from '../map-place/walls/wall'
+import { NormalDoor } from '../map-place/doors/normal-door'
+import { NormalRoom } from '../map-place/rooms/normal-room'
+import { NormalWall } from '../map-place/walls/normal-wall'
 import { LabyrinthFactory } from './labyrinth-factory'
 
 export class NormalLabyrinthFactory implements LabyrinthFactory {
   make_labyrinth(): Labyrinth {
     return new Labyrinth()
   }
-  make_wall(): Wall {
-    return new Wall()
+  make_wall(): NormalWall {
+    return new NormalWall()
   }
-  make_room(room_number: number): Room {
-    return new Room(room_number)
+  make_room(room_number: number): NormalRoom {
+    return new NormalRoom(room_number)
   }
-  make_door(room1: Room, room2: Room): Door {
-    return new Door(room1, room2)
+  make_door(room1: NormalRoom, room2: NormalRoom): NormalDoor {
+    return new NormalDoor(room1, room2)
   }
 }

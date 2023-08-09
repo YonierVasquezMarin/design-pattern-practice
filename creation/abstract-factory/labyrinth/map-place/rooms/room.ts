@@ -1,17 +1,9 @@
 import { MapPlace } from '../map-place'
 
-export class Room extends MapPlace {
-  sides: Array<MapPlace> = []
-  room_number: number
+export interface Room {
+  enter_to(): void
 
-  constructor(room_number: number) {
-    super()
-    this.room_number = room_number
-  }
+  set_side(direction: string, elemento: MapPlace): void
 
-  enter_to(): void {}
-
-  set_side(direction: string, elemento: MapPlace): void {}
-
-  get_side(): void {}
+  get_side(): void
 }

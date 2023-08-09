@@ -1,5 +1,5 @@
-import { MapPlace } from "../map-place";
+import { MapPlace } from '../map-place'
 
-export class Wall extends MapPlace {
-    enter_to(): void { }
+export class Wall {
+  enter_to(): void {}
 }

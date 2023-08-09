@@ -1,9 +1,9 @@
-import { Room } from './map-place/rooms/room'
+import { NormalRoom } from './map-place/rooms/normal-room'
 
 export class Labyrinth {
-  rooms: Array<Room> = []
+  rooms: Array<NormalRoom> = []
 
-  add_room(room: Room): void {
+  add_room(room: NormalRoom): void {
     this.rooms.push(room)
   }
 
