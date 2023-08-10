@@ -12,8 +12,8 @@ export class NormalRoom extends MapPlace implements Room {
 
   enter_to(): void {}
 
-  set_side(direction: string, elemento: MapPlace): void {
-    console.log('direction: ', direction, 'elemento: ', elemento)
+  set_side(element: MapPlace): void {
+    this.sides.push(element)
   }
 
   get_side(): void {}

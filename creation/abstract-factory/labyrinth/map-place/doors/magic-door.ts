@@ -2,7 +2,7 @@ import { MapPlace } from '../map-place'
 import { NormalRoom } from '../rooms/normal-room'
 import { Door } from './door'
 
-export class NormalDoor extends MapPlace implements Door {
+export class MagicDoor extends MapPlace implements Door {
   is_opened: boolean
   room1: NormalRoom
   room2: NormalRoom
@@ -14,5 +14,7 @@ export class NormalDoor extends MapPlace implements Door {
     this.room2 = room2
   }
 
-  enter_to(): void {}
+  enter_to(): void {
+    console.log('You entered to the magic door')
+  }
 }

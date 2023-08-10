@@ -1,6 +1,6 @@
-import { NormalLabyrinth as Labyrinth } from '../map-place/labyrinths/normal-labyrinth'
-import { NormalRoom as Room } from '../map-place/rooms/normal-room'
-import { NormalDoor as Door } from '../map-place/doors/normal-door'
+import { Door } from '../map-place/doors/door'
+import { Labyrinth } from '../map-place/labyrinths/labyrinth'
+import { Room } from '../map-place/rooms/room'
 import { Wall } from '../map-place/walls/wall'
 
 export interface LabyrinthFactory {
