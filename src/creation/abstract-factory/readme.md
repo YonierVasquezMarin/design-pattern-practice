@@ -2,6 +2,13 @@
 
 Proporciona una interfaz común para la creación de objetos relacionados, permitiendo intercambiar las implementaciones concretas sin cambiar el código que los utiliza.
 
+# Pasos para la construcción de una factoría abstracta
+
+- producto abstracto
+- productos concretos
+- factoria abstracta
+- factoria concreta
+
 # Ejemplos de factorias abstractas
 
 - creación de figuras geométricas
