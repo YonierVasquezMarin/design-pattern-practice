@@ -1,6 +1,6 @@
-import { Vehicle } from '../vehicle.interface'
+import { Vehicle } from './../vehicle.interface'
 
-export class LightVehicle implements Vehicle {
+export class LightVehicleWithNitro implements Vehicle {
   mass: number
   speed: number
 
@@ -10,7 +10,7 @@ export class LightVehicle implements Vehicle {
   }
 
   accelerate() {
-    const acceleration_unit = 30
+    const acceleration_unit = 60
     if (this.speed + acceleration_unit < 240) {
       this.speed += acceleration_unit
     }

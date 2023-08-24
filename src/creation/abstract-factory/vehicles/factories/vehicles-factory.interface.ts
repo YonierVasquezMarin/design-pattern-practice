@@ -1,7 +1,6 @@
-import { HeavyVehicle } from '../vehicles/heavy-vehicles/heavy-vehicle.class'
-import { LightVehicle } from '../vehicles/light-vehicles/light-vehicle.class'
+import { Vehicle } from '../vehicles/vehicle.interface'
 
 export interface VehiclesFactory {
-  create_light_vehicle(): LightVehicle
-  create_heavy_vehicle(): HeavyVehicle
+  create_light_vehicle(): Vehicle
+  create_heavy_vehicle(): Vehicle
 }

@@ -1,4 +1,5 @@
-import { NormalVehiclesFactory } from './factories/vehicles-factory.class'
+// import { NormalVehiclesFactory } from './factories/vehicles-factory.class'
+import { VehiclesWithNitroFactory } from './factories/vehicle-with-nitro-factory.class'
 import { VehiclesFactory } from './factories/vehicles-factory.interface'
 import { HeavyVehicle } from './vehicles/heavy-vehicles/heavy-vehicle.class'
 import { LightVehicle } from './vehicles/light-vehicles/light-vehicle.class'
@@ -26,4 +27,4 @@ export class VehiclesStore {
   }
 }
 
-new VehiclesStore(new NormalVehiclesFactory()).test_vehicles()
+new VehiclesStore(new VehiclesWithNitroFactory()).test_vehicles()

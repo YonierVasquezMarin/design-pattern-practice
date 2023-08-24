@@ -4,11 +4,12 @@ Proporciona una interfaz común para la creación de objetos relacionados, permi
 
 # Pasos para la construcción de una factoría abstracta
 
-- producto abstracto
-- productos concretos
-- factoria abstracta
-- factoria concreta
-- el cliente implementa la factoria abstracta pero desde capas superiores se le otorga factorias concretas
+1. producto abstracto
+2. productos concretos
+3. factoria abstracta
+4. factoria concreta
+5. el cliente implementa la factoria abstracta pero desde capas superiores se le otorga una factoria concreta
+6. cuando se va a agregar otra familia solo se agrega los "productos concretos" y la "factoria concreta"
 
 # Ejemplos de factorias abstractas
 
