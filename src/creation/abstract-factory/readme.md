@@ -8,6 +8,7 @@ Proporciona una interfaz común para la creación de objetos relacionados, permi
 - productos concretos
 - factoria abstracta
 - factoria concreta
+- el cliente implementa la factoria abstracta pero desde capas superiores se le otorga factorias concretas
 
 # Ejemplos de factorias abstractas
 
