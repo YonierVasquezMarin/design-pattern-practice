@@ -1,14 +1,11 @@
-import { Shape } from './shape'
+import { Shape } from './abstract-shape/shape'
 
-export class Circle implements Shape {
+export class Circle extends Shape {
   radius: number
 
-  constructor(source: Circle) {
-    this.radius = source.radius
-  }
-
-  clone(): Shape {
-    return new Circle(this)
+  constructor(radius: number = 0) {
+    super()
+    this.radius = radius
   }
 
   getArea(): number {
@@ -17,5 +14,9 @@ export class Circle implements Shape {
 
   getPerimeter(): number {
     return 2 * Math.PI * this.radius
+  }
+
+  toString(): string {
+    return `Circle { radius: ${this.radius} }`
   }
 }

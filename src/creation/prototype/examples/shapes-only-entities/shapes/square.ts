@@ -1,18 +1,22 @@
-import { Shape } from './shape'
+import { Shape } from './abstract-shape/shape'
 
-export class Square implements Shape {
+export class Square extends Shape {
   side: number
 
-  constructor(source: Square) {
-    this.side = source.side
+  constructor(side: number = 0) {
+    super()
+    this.side = side
   }
-  clone() {
-    return new Square(this)
-  }
+
   getArea() {
     return this.side * this.side
   }
+
   getPerimeter() {
     return 4 * this.side
+  }
+
+  toString() {
+    return `Square { side: ${this.side} }`
   }
 }

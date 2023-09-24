@@ -1,0 +1,5 @@
+export * from './abstract-shape/shape'
+export * from './circle'
+export * from './rectangle'
+export * from './square'
+export * from './triangle'
