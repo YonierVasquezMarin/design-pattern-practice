@@ -18,4 +18,8 @@ export class ShapesRegistry {
   getShape(name: SHAPE): Shape | undefined {
     return this.shapes.get(name)?.clone()
   }
+
+  saveShape(name: SHAPE, shape: Shape) {
+    this.shapes.set(name, shape)
+  }
 }

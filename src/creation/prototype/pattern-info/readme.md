@@ -6,6 +6,13 @@ El patrón Prototype se utiliza típicamente en situaciones en las que un sistem
 
 El uso del patrón Prototype puede ayudar a reducir la duplicación de código y mejorar el rendimiento en situaciones en las que la creación de objetos es costosa. Además, permite la creación de objetos con estados personalizados sin tener que crear una nueva clase para cada variante.
 
+# Pasos para implementar el patrón
+
+1. el prototipo abstracto que implementa el método clone() y demás miembros del negocio
+2. prototipos concretos que heredan del abstracto
+3. enumeración con los prototipos concretos posibles
+4. registro de prototipos
+
 ## Observaciones adicionales
 
 - Supongamos que tiene un objeto y desea crear una copia exacta del mismo. ¿Cómo lo harías? En primer lugar, debe crear un nuevo objeto de la misma clase. Luego debe revisar todos los campos del objeto original y copiar sus valores al nuevo objeto. Pero hay una trampa. No todos los objetos se pueden copiar de esa manera porque algunos de los campos del objeto pueden ser privados y no visibles desde fuera del propio objeto.
