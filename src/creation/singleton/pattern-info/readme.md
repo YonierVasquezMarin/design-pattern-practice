@@ -11,3 +11,8 @@ Ejemplos donde se podría usar un objeto global puede ser:
 - En un sistemas de impresoras hay varios equipos de impresión pero sólo una cola de documentos
 - Sólo debe existir un gestor de ventanas para administrar el sistema gráfico
 - Un intermediario con una base de datos, solo puede existir una conexión al tiempo
+
+# Pasos para la implementación del patrón
+
+1. crear clase nucleo del singleton (hay varios enfoques)
+2. consumo del singleton desde el cliente
